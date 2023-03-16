@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=3 format=3 uid="uid://c3fji70nvi8"]
+
+[ext_resource type="Texture2D" uid="uid://i8uegfejpnwn" path="res://Assets/Potraits/unknown.png" id="1_2ro7x"]
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="2_rdppb"]
+
+[resource]
+script = ExtResource("2_rdppb")
+id = 0
+speaker = "unknown"
+expression = ExtResource("1_2ro7x")
+dialogue = "It seems we have a new visitor here..."
+nextDialogue = 1
+prevDialogue = -1

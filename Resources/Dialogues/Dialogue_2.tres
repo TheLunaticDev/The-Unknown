@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=3 format=3 uid="uid://cl23t4lnklvmg"]
+
+[ext_resource type="Texture2D" uid="uid://b6h1ku0bl4mfv" path="res://Assets/Potraits/bbneutral.png" id="1_x4pkt"]
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="2_qsqw3"]
+
+[resource]
+script = ExtResource("2_qsqw3")
+id = 2
+speaker = "bb"
+expression = ExtResource("1_x4pkt")
+dialogue = "For now you can call me BB. I am someone who has power or should I say authority to see and know everything that happens in this world."
+nextDialogue = 3
+prevDialogue = 1

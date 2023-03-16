@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://cy67mwx38acm5"]
+
+[ext_resource type="Script" path="res://Scripts/Item.gd" id="1_f41yg"]
+[ext_resource type="Texture2D" uid="uid://x7xpsbf1qb1p" path="res://Assets/Items/ancientBrittleShield.png" id="2_0ekqy"]
+
+[resource]
+script = ExtResource("1_f41yg")
+id = 2
+name = "Ancient Brittle Shield"
+description = "Many years ago in a certain insignificant war. A certain hero fought till his last breath for his motherland. Even though he was pierced with more than a hundred arrows he tightly held onto his shield and charged forward. Surely as long as he has a will to live he will not die. As the fated arrow pierced his skull he planted the shield with all his last force remained on the ground. And let out a final cry. A cry that sanked fear into the hearts of his opponent..."
+texture = ExtResource("2_0ekqy")
+amount = 0
+maxAmount = 1
+value = 500

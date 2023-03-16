@@ -1,0 +1,319 @@
+[gd_scene load_steps=7 format=3 uid="uid://dbtfnf8rfy3nx"]
+
+[ext_resource type="FontFile" uid="uid://bh7k7nt6ionqq" path="res://Assets/Fonts/bedstead.otf" id="1_5dksj"]
+[ext_resource type="Script" path="res://Scripts/Inventory.gd" id="1_w2o6b"]
+[ext_resource type="Texture2D" uid="uid://cdxdkty5f5eij" path="res://Assets/Inventory/selectedPanel.png" id="2_hmb2v"]
+[ext_resource type="Texture2D" uid="uid://c0ymqkkyf03h0" path="res://Assets/Inventory/hoveringPanel.png" id="3_6mraj"]
+[ext_resource type="Texture2D" uid="uid://b1i0wy24f3vee" path="res://Assets/Inventory/nonSelectedPanel.png" id="5_pkmlp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_42mlp"]
+texture = ExtResource("5_pkmlp")
+
+[node name="Inventory" type="ColorRect"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -225.0
+offset_right = 300.0
+offset_bottom = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.156863, 0.164706, 0.211765, 1)
+script = ExtResource("1_w2o6b")
+selectedPanelTexture = ExtResource("2_hmb2v")
+hoveringPanelTexture = ExtResource("3_6mraj")
+animationSpeed = 0.125
+itemsDirectory = "res://Resources/Items"
+default_name = "It is Empty"
+default_description = "And as they searched for it. Even though they knew they wouldn't find anything. The thought of finding something impossible still lingered in their mind. And as they kept searching for something that is impossible to find, they started to think if it cannot be found is it real?"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 20.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.545098, 0.913725, 0.972549, 1)
+theme_override_fonts/font = ExtResource("1_5dksj")
+theme_override_font_sizes/font_size = 16
+text = "Inventory"
+horizontal_alignment = 2
+vertical_alignment = 1
+uppercase = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Use" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.333333, 0.333333, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_focus_color = Color(1, 0.333333, 0.333333, 1)
+theme_override_fonts/font = ExtResource("1_5dksj")
+theme_override_font_sizes/font_size = 25
+text = "Use"
+flat = true
+
+[node name="Discard" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.333333, 0.333333, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_focus_color = Color(1, 0.333333, 0.333333, 1)
+theme_override_fonts/font = ExtResource("1_5dksj")
+theme_override_font_sizes/font_size = 25
+text = "Discard"
+flat = true
+
+[node name="Equip" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.333333, 0.333333, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_focus_color = Color(1, 0.333333, 0.333333, 1)
+theme_override_fonts/font = ExtResource("1_5dksj")
+theme_override_font_sizes/font_size = 25
+text = "Equip"
+flat = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 250.0
+offset_right = 575.0
+offset_bottom = 400.0
+
+[node name="Name" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_fonts/font = ExtResource("1_5dksj")
+text = "Description"
+uppercase = true
+
+[node name="Description" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_fonts/font = ExtResource("1_5dksj")
+theme_override_font_sizes/font_size = 14
+text = "This is the description of the selected item..."
+autowrap_mode = 3
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 30.0
+offset_right = 575.0
+offset_bottom = 230.0
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 6
+
+[node name="Panel" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_neighbor_right = NodePath("../Panel2")
+focus_neighbor_bottom = NodePath("../Panel7")
+theme_override_styles/panel = SubResource("StyleBoxTexture_42mlp")
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel2" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_42mlp")
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel3" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_42mlp")
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/Panel3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel4" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_42mlp")
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/Panel4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel5" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_42mlp")
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/Panel5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel6" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_42mlp")
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/Panel6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel7" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_42mlp")
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/Panel7"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel8" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_42mlp")
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/Panel8"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel9" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_42mlp")
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/Panel9"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel10" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_42mlp")
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/Panel10"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel11" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_42mlp")
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/Panel11"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel12" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_42mlp")
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/Panel12"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Selected" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 82.0
+offset_bottom = 93.0
+texture = ExtResource("3_6mraj")
+
+[connection signal="pressed" from="HBoxContainer/Discard" to="." method="_on_discard_pressed"]

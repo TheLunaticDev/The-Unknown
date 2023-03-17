@@ -1,0 +1,799 @@
+[gd_scene load_steps=3 format=3 uid="uid://b60c826mxek5s"]
+
+[ext_resource type="FontFile" uid="uid://bh7k7nt6ionqq" path="res://Assets/Fonts/bedstead.otf" id="1_mx1wb"]
+[ext_resource type="Script" path="res://Scripts/TextResponseBox.gd" id="1_qo4vb"]
+
+[node name="TextResponseBox" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qo4vb")
+message = "What is your name?"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.156863, 0.164706, 0.211765, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Message" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.545098, 0.913725, 0.972549, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "Enter Your Message Here..."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="Response" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "Type Your Response Using the Keyboard!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+clip_text = true
+
+[node name="Keyboard" type="GridContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 2
+theme_override_constants/v_separation = 2
+columns = 10
+
+[node name="Button" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "1"
+flat = true
+
+[node name="Button2" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "2"
+flat = true
+
+[node name="Button3" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "3"
+flat = true
+
+[node name="Button4" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "4"
+flat = true
+
+[node name="Button5" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "5"
+flat = true
+
+[node name="Button6" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "6"
+flat = true
+
+[node name="Button7" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "7"
+flat = true
+
+[node name="Button8" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "8"
+flat = true
+
+[node name="Button9" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "9"
+flat = true
+
+[node name="Button10" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "0"
+flat = true
+
+[node name="Button11" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "Q"
+flat = true
+
+[node name="Button12" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "W"
+flat = true
+
+[node name="Button13" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "E"
+flat = true
+
+[node name="Button14" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "R"
+flat = true
+
+[node name="Button15" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "T"
+flat = true
+
+[node name="Button16" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "Y"
+flat = true
+
+[node name="Button17" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "U"
+flat = true
+
+[node name="Button18" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "I"
+flat = true
+
+[node name="Button19" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "O"
+flat = true
+
+[node name="Button20" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "P"
+flat = true
+
+[node name="Button21" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "A"
+flat = true
+
+[node name="Button22" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "S"
+flat = true
+
+[node name="Button23" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "D"
+flat = true
+
+[node name="Button24" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "F"
+flat = true
+
+[node name="Button25" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "G"
+flat = true
+
+[node name="Button26" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "H"
+flat = true
+
+[node name="Button27" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "J"
+flat = true
+
+[node name="Button28" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "K"
+flat = true
+
+[node name="Button29" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "L"
+flat = true
+
+[node name="Button30" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "'"
+flat = true
+
+[node name="Button31" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "Z"
+flat = true
+
+[node name="Button32" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "X"
+flat = true
+
+[node name="Button33" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "C"
+flat = true
+
+[node name="Button34" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "V"
+flat = true
+
+[node name="Button35" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "B"
+flat = true
+
+[node name="Button36" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "N"
+flat = true
+
+[node name="Button37" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "M"
+flat = true
+
+[node name="Button38" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "BSpace"
+flat = true
+
+[node name="Button39" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "Space"
+flat = true
+
+[node name="Button40" type="Button" parent="VBoxContainer/Keyboard"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "Clear"
+flat = true
+
+[node name="Confirm" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_hover_color = Color(1, 0.721569, 0.423529, 1)
+theme_override_colors/font_focus_color = Color(0.945098, 0.980392, 0.54902, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.313726, 0.980392, 0.482353, 1)
+theme_override_colors/font_disabled_color = Color(0.266667, 0.278431, 0.352941, 1)
+theme_override_colors/font_outline_color = Color(0.545098, 0.913725, 0.992157, 1)
+theme_override_fonts/font = ExtResource("1_mx1wb")
+theme_override_font_sizes/font_size = 25
+text = "Confirm"
+flat = true
+
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button7" to="." method="_on_button_7_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button8" to="." method="_on_button_8_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button9" to="." method="_on_button_9_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button10" to="." method="_on_button_10_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button11" to="." method="_on_button_11_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button12" to="." method="_on_button_12_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button13" to="." method="_on_button_13_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button14" to="." method="_on_button_14_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button15" to="." method="_on_button_15_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button16" to="." method="_on_button_16_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button17" to="." method="_on_button_17_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button18" to="." method="_on_button_18_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button19" to="." method="_on_button_19_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button20" to="." method="_on_button_20_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button21" to="." method="_on_button_21_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button22" to="." method="_on_button_22_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button23" to="." method="_on_button_23_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button24" to="." method="_on_button_24_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button25" to="." method="_on_button_25_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button26" to="." method="_on_button_26_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button27" to="." method="_on_button_27_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button28" to="." method="_on_button_28_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button29" to="." method="_on_button_29_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button30" to="." method="_on_button_30_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button31" to="." method="_on_button_31_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button32" to="." method="_on_button_32_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button33" to="." method="_on_button_33_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button34" to="." method="_on_button_34_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button35" to="." method="_on_button_35_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button36" to="." method="_on_button_36_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button37" to="." method="_on_button_37_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button38" to="." method="_on_button_38_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button39" to="." method="_on_button_39_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keyboard/Button40" to="." method="_on_button_40_pressed"]
+[connection signal="pressed" from="VBoxContainer/Confirm" to="." method="_on_confirm_pressed"]

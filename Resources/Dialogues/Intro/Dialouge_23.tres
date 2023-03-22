@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://dwc8kj58wmvio"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_cqoub"]
+
+[resource]
+script = ExtResource("1_cqoub")
+id = 23
+speaker = "bb"
+dialogue = "But this world is in a shape that if I do that you would be killed instantly."
+nextDialogue = 24
+prevDialogue = 22

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://cur11i30im6ia"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_xkdiq"]
+
+[resource]
+script = ExtResource("1_xkdiq")
+id = 27
+speaker = "bb"
+dialogue = "And don't worry, I will go with you to help you. Mostly verbally anyway as I don't have any other significant powers besides knowledge."
+nextDialogue = 28
+prevDialogue = 26

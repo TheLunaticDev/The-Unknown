@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://cteskjkie7hgx"]
+
+[ext_resource type="Script" path="res://Scripts/Levels/Intro.gd" id="1_0gtdy"]
+[ext_resource type="Texture2D" uid="uid://d33pdmqydmfv4" path="res://Assets/Backgrounds/whereTheWorldsMeet.png" id="1_oh474"]
+[ext_resource type="PackedScene" uid="uid://byl38tmdgpg02" path="res://Scenes/DialogueBox/DialogueBox.tscn" id="3_ec8xj"]
+
+[node name="Intro" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0gtdy")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_oh474")
+
+[node name="DialogueBox" parent="." instance=ExtResource("3_ec8xj")]
+visible = true
+layout_mode = 0
+offset_left = 141.0
+offset_top = 231.0
+offset_right = 653.0
+offset_bottom = 359.0
+dialoguesLocation = "res://Resources/Dialogues/Intro/"
+
+[node name="InitialPause" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="dialogue_completed" from="DialogueBox" to="." method="_on_dialogue_box_dialogue_completed"]
+[connection signal="timeout" from="InitialPause" to="." method="_on_initial_pause_timeout"]

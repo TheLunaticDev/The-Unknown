@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://cwkt5nsi3b3hd"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_0o5md"]
+
+[resource]
+script = ExtResource("1_0o5md")
+id = 15
+speaker = "bb"
+dialogue = "But your case makes it especially hard because you don't remember where you came from."
+nextDialogue = 16
+prevDialogue = 14

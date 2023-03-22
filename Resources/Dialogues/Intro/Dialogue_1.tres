@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Dialogue" load_steps=3 format=3 uid="uid://dcsspl58nga2h"]
 
-[ext_resource type="Texture2D" uid="uid://i8uegfejpnwn" path="res://Assets/Potraits/unknown.png" id="1_ine2d"]
+[ext_resource type="Texture2D" uid="uid://c4lu4yf2e0qmn" path="res://Assets/Potraits/unknown.png" id="1_ine2d"]
 [ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="2_susot"]
 
 [resource]
@@ -8,6 +8,6 @@ script = ExtResource("2_susot")
 id = 1
 speaker = "unknown"
 expression = ExtResource("1_ine2d")
-dialogue = "Ah! Where are my manners. Let me introduce myself first..."
+dialogue = "How many times has this happened already? Well, I stopped counting ages ago..."
 nextDialogue = 2
 prevDialogue = 0

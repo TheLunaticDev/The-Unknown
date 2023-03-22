@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://ur2eoyk8yicc"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_qerpf"]
+
+[resource]
+script = ExtResource("1_qerpf")
+id = 21
+speaker = "bb"
+dialogue = "In a certain world there is a device that I believe can remove the lock on your memory."
+nextDialogue = 22
+prevDialogue = 20

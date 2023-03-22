@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Dialogue" load_steps=3 format=3 uid="uid://ftcieq7pyihx"]
 
-[ext_resource type="Texture2D" uid="uid://cbepwamjpyomi" path="res://Assets/Potraits/bbwonder.png" id="1_ytqyf"]
+[ext_resource type="Texture2D" uid="uid://djvwhk812o3xf" path="res://Assets/Potraits/bbwonder.png" id="1_ytqyf"]
 [ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="2_ksqtq"]
 
 [resource]
@@ -8,6 +8,6 @@ script = ExtResource("2_ksqtq")
 id = 3
 speaker = "bb"
 expression = ExtResource("1_ytqyf")
-dialogue = "But I am not god of this world or anything mind you. I am just a humble spectator."
+dialogue = "As for where you are now... It is a special location where all worlds meet."
 nextDialogue = 4
 prevDialogue = 2

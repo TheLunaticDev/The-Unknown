@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://v15130nofyn7"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_k07ay"]
+
+[resource]
+script = ExtResource("1_k07ay")
+id = 28
+speaker = "bb"
+dialogue = "So, let's begin this journey now, shall we?"
+nextDialogue = -1
+prevDialogue = 27

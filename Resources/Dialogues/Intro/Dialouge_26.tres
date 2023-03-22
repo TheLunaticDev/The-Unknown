@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://b7s22yod1pp5n"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_x2bst"]
+
+[resource]
+script = ExtResource("1_x2bst")
+id = 26
+speaker = "bb"
+dialogue = "It is a very dangerous location. But it is also the closest location where you won't be killed instantly if you were summoned."
+nextDialogue = 27
+prevDialogue = 25

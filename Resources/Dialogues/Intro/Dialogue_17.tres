@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://c8fparjdm1e5p"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_8hwyc"]
+
+[resource]
+script = ExtResource("1_8hwyc")
+id = 17
+speaker = "bb"
+dialogue = "Hmmm... That's a good question. And the answer is I don't know."
+nextDialogue = 18
+prevDialogue = 16

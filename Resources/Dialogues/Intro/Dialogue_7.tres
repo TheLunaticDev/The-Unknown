@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://cvb6lf746mjyh"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_uu5h1"]
+
+[resource]
+script = ExtResource("1_uu5h1")
+id = 7
+speaker = "bb"
+dialogue = "You want to return to your own world? Even though you don't remember where you came from at all?"
+nextDialogue = 8
+prevDialogue = 7

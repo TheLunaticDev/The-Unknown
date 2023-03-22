@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://cdj0uo8m20r8r"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_y0mn7"]
+
+[resource]
+script = ExtResource("1_y0mn7")
+id = 19
+speaker = "bb"
+dialogue = "It is more like someone has installed a lock so that no one can peek inside."
+nextDialogue = 20
+prevDialogue = 18

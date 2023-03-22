@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://i1pyysd4r6yr"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_awhu8"]
+
+[resource]
+script = ExtResource("1_awhu8")
+id = 11
+speaker = "bb"
+dialogue = "... you might just end up in plate of some ancient alien dinosaur for all I know."
+nextDialogue = 12
+prevDialogue = 10

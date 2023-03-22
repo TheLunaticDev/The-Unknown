@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://ciq4r4qy6lrjm"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_ns7m7"]
+
+[resource]
+script = ExtResource("1_ns7m7")
+id = 22
+speaker = "bb"
+dialogue = "I would have liked to teleport you there directly in front of that machine..."
+nextDialogue = 23
+prevDialogue = 21

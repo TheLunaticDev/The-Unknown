@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://qom06n5gjwwn"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_pr47a"]
+
+[resource]
+script = ExtResource("1_pr47a")
+id = 10
+speaker = "bb"
+dialogue = "It is a complex web of space and time here. A slight miscalculation and..."
+nextDialogue = 11
+prevDialogue = 9

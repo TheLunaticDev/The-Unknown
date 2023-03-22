@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://b1xsndfan438u"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_rjg0w"]
+
+[resource]
+script = ExtResource("1_rjg0w")
+id = 24
+speaker = "bb"
+dialogue = "Why? An internal conflict is going on there. If you pop up in on any side without notice they might take you for an enemy and turn you into red soup."
+nextDialogue = 25
+prevDialogue = 23

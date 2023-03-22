@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Dialogue" load_steps=3 format=3 uid="uid://bjphuk8pp2frl"]
 
-[ext_resource type="Texture2D" uid="uid://b6h1ku0bl4mfv" path="res://Assets/Potraits/bbneutral.png" id="1_aofse"]
+[ext_resource type="Texture2D" uid="uid://dqb208jcn3kus" path="res://Assets/Potraits/bbneutral.png" id="1_aofse"]
 [ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="2_ksqtq"]
 
 [resource]
@@ -8,6 +8,6 @@ script = ExtResource("2_ksqtq")
 id = 4
 speaker = "bb"
 expression = ExtResource("1_aofse")
-dialogue = "It seems that you aren't of this world. Well I have already given you my name. It is only fair that you tell me yours too. So what is your name?"
-nextDialogue = -1
+dialogue = "How did you end up here? Shouldn't you be the one to answer that question?"
+nextDialogue = 5
 prevDialogue = 3

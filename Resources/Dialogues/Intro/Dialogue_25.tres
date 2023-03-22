@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://oi4fndo1vs3j"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_wy7p1"]
+
+[resource]
+script = ExtResource("1_wy7p1")
+id = 25
+speaker = "bb"
+dialogue = "So, I will have to summon you to a particular location. A particular forest to be exact."
+nextDialogue = 26
+prevDialogue = 24

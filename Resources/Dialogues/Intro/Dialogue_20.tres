@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://bqse51vmf4moc"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_8jkye"]
+
+[resource]
+script = ExtResource("1_8jkye")
+id = 20
+speaker = "bb"
+dialogue = "But fear not, I know just a way for you to get your memories back."
+nextDialogue = 21
+prevDialogue = 19

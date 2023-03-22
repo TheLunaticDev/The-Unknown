@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://doslqmduyyahk"]
+
+[ext_resource type="Script" path="res://Scripts/Dialogue.gd" id="1_o78eq"]
+
+[resource]
+script = ExtResource("1_o78eq")
+id = 9
+speaker = "bb"
+dialogue = "While exiting here is not hard per se. It is quite another story to exit to a place that you don't even remember at all."
+nextDialogue = 10
+prevDialogue = 8
